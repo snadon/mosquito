@@ -34,7 +34,7 @@ module Mosquito::Runners
     getter idle_notifier
 
     # The number of executors to start.
-    getter executor_count = 3
+    getter executor_count = 20
 
     getter idle_wait : Time::Span {
       Mosquito.configuration.idle_wait
